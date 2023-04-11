@@ -1,2 +1,2 @@
-# AI-quote-generators
+# AI-quote-generator
  
