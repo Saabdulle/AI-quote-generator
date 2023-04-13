@@ -1,15 +1,16 @@
 from flask import Flask, jsonify
+import json
 
-app = Flask(__name__)
+server = Flask(__name__)
 
-@app.route('/')
+@server.route('/')
 def home():
-    return jsonify({"Welcome to AI Quotes Generator"})
+    return {"Home":
+     "Welcome to AI Quotes Generator"    
+    }
 
 
-@app.route('/quotes')
+@server.route('/quotes')
 def quotes():
     return {"Quotes": ["Quote 1", "Quote 2", "Quote 3"]}
 
-if __name__ == "__main__":
-    app.run(debug=True)
